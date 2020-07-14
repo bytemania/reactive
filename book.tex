@@ -1,0 +1,92 @@
+\documentclass[graybox,envcountchap,sectrefs]{svmono}
+
+\usepackage{type1cm}         
+
+\usepackage{makeidx}         
+\usepackage{graphicx}        
+                            
+\usepackage{multicol}       
+\usepackage[bottom]{footmisc}
+
+\usepackage{newtxtext}       
+\usepackage{newtxmath}  
+
+\usepackage{tabularx}
+
+\usepackage{hyperref}
+
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+\urlstyle{same}
+
+%draft
+\usepackage{draftwatermark}
+\SetWatermarkText{DRAFT}
+\SetWatermarkScale{1}
+
+\graphicspath{ {./images/} }
+
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{1em}
+\renewcommand{\baselinestretch}{1}
+
+\let\OLDthebibliography\thebibliography
+\renewcommand\thebibliography[1]{
+  \OLDthebibliography{#1}
+  \setlength{\parskip}{0.3cm}
+  \setlength{\itemsep}{0pt plus 0.3ex}
+}
+
+\author{Antonio \and Tom}
+\title{Reactive Systems Distilled}
+\subtitle{Concepts}
+
+\makeindex            
+
+\begin{document}
+
+%\maketitle
+
+\frontmatter
+%\include{author/dedication}
+%\include{author/foreword}
+%\include{author/preface}
+%\include{author/acknowledgement}
+
+%\tableofcontents
+
+%\listoftables
+
+%\listoffigures
+
+%\include{author/acronym}
+
+
+\mainmatter
+%\include{author/chapter}
+%\include{author/chp1}
+\include{author/chp2}
+%\include{author/chp3}
+%\include{author/chp4}
+%\include{author/chp5}
+%\include{author/chp6}
+%\include{author/appendix}
+
+%\backmatter
+%\include{author/glossary}
+%\include{author/solutions}
+%\printindex
+
+\end{document}
+
+
+
+
+
